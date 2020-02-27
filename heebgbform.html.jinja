@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title>AHFG</title>
+	</head>
+	<body>
+		<h2>A HeeBGB Fractal Generator</h2>
+		<p><strong style="color:red">{{ error }}</strong></p>
+		<form action="/heebgb/" method="POST">
+		  <label for="affinemaps">Affine Maps</label>
+		  <input type="text" id="affinemaps" name="affinemaps" size="200"><br><br>
+		  <label for="colormaps">Color Maps</label>
+		  <input type="text" id="colormaps" name="colormaps" size="200"><br><br>
+		  <label for="numiter">Number of iterations:</label>
+		  <select id="numiter" name="numiter">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		  </select>
+		  <input type="submit" value="Generate">
+		</form> 
+	</body>
+</html>
